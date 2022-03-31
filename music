@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/087bf7086a.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .a {
+            display: flex;
+            height: 43vh;
+            width: 90em;
+            justify-content: space-between;
+            background-color: rgb(36, 31, 31);
+        }
+
+        .d1 {
+            height: 97vh;
+            width: 30vh;
+            background-color: rgb(17, 15, 15);
+            position: fixed;
+
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+            align-items: center;
+            color: rgb(226, 224, 224);
+        }
+
+        h1 {
+            font-family: 'Roboto Mono', monospace;
+            font-size: xX-large;
+        }
+
+        p {
+            font-size: 3.7vh;
+        }
+
+        .song {
+            margin-left: 34vh;
+        }
+
+        .songs {
+            margin-top: 4.5vh;
+            margin-left: 5vh;
+
+        }
+
+        h2 {
+            color: aliceblue;
+        }
+
+        img {
+            height: 25vh;
+            width: 20vh;
+        }
+
+        h4 {
+            color: rgb(219, 222, 224);
+        }
+
+        h5 {
+            color: rgb(163, 163, 163);
+        }
+
+        .music {
+            z-index: 3;
+            height: 10vh;
+            width: 100%;
+            background-color: rgb(15, 13, 13);
+            position: fixed;
+            margin-top: 1.3vh;
+        }
+
+        .plyer {
+            margin-top: 3vh;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+
+        }
+
+        i {
+            padding-left: 4vh;
+        }
+
+        .line {
+
+            height: 1vh;
+        }
+
+        input {
+            width: 100%;
+
+        }
+
+        .songlist {
+            display: none;
+        }
+
+        #bt:hover {
+            color: rgb(56, 153, 153);
+        }
+
+        .poster {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            animation: poster 10s linear infinite forwards;
+            border: 2px solid rgb(105, 95, 95);
+        }
+
+        @keyframes poster {
+            from {
+                transform: rotate(0deg);
+
+            }
+
+            to {
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="a">
+        <div class="d1">
+
+            <div class="icon">
+                <h1>welcome</h1> <br>
+                <i id="bt" class="fa fa-home" aria-hidden="true"> home</i> <br>
+                <i id="bt" class="fa fa-search" aria-hidden="true"> search</i> <br>
+                <i id="bt" class="fa fa-th-list" aria-hidden="true"> your library</i><br>
+                <p> <i id="bt" class="fa fa-plus-square-o" aria-hidden="true"> Create Playlist</i></p> <br>
+                <i id="bt" class="fa fa-heart" aria-hidden="true"> Liked songs</i>
+            </div>
+
+
+        </div>
+
+
+        <div class="song">
+            <h2>Charts</h2> <br>
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+
+
+    </section>
+
+    <section class="a">
+
+        <div class="song">
+            <h2>Trending songs</h2>
+            <br>
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+
+        <div class="songs">
+            <br>
+
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/raj1/songposter2.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+    </section>
+
+    <div class="music">
+        <div class="line"> 
+            <input  id="song"  type="range" min="0" max="audio.duration" onchange="time()" value="0">
+        </div>
+
+        <div class="plyer">
+
+            <img id="poster" class="poster" src="/raj1/songposter.jpg" alt="">
+            <i id="bt" onclick="pre()" class="fa fa-step-backward" aria-hidden="true"></i>
+            <i id="palyorpause" onclick="player()" class="fa fa-pause-circle" aria-hidden="true"></i>
+            <i id="bt" onclick="next()" class="fa fa-step-forward" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+    <section class="a">
+
+        <div class="song">
+            <h2>Hindi songs</h2> <br>
+            <img onclick="play()" src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="player()" src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        <div class="songs">
+            <br>
+            <img onclick="play()" src="/songposter3.jpg" alt="">
+            <h4>Latest hindi</h4>
+            <h5>new latest music</h5>
+
+        </div>
+        </div>
+    </section>
+    <div class="songlist">
+        <audio src="/song.m4a" id="songlist"></audio>
+
+    </div>
+    <!-- currentTime -->
+
+    <script>
+        var audio = document.getElementById("songlist");
+        var song2 = document.getElementById("song2");
+        var song3 = document.getElementById("song3");
+        var poster = document.getElementById("poster");
+   var seeker = document.getElementById("song");
+
+
+        var songlist = ['song.m4a', 'song2.m4a', 'song3.m4a'];
+        var posters = ['/raj1/songposter.jpg', '/raj1/songposter2.jpg', "/songposter3.jpg"]
+       var button =document.getElementById("palyorpause") ;
+       
+       function player() { 
+           alert(audio.duration)
+          
+            if (button.className=='fa fa-pause-circle') { 
+             button.className="fa fa-play-circle";
+            audio.pause();
+
+            }
+            else if (button.className=='fa fa-play-circle') {
+                button.className="fa fa-pause-circle";
+                audio.play();
+            }
+        }
+
+
+
+        i = 1;
+
+
+
+        window.setInterval(function fun() {
+
+            document.getElementById("song").value = i
+            i++;
+           
+
+           
+
+        }, 1000);
+
+        var index = 0;
+        function next() {
+            if (index == 3) {
+                index = 0;
+            }
+            audio.src = songlist[index];
+            audio.play();
+
+            var timer = audio.duration;
+            // console.log(audio.duration)
+            // alert(seeker.max)
+            alert(timer)
+            poster.src = posters[index];
+           
+            alert(index + " is playing")
+            index++;
+        };
+
+        function pre() {
+            if (index == -1) {
+                index = 2;
+            }
+            audio.src = songlist[index];
+            audio.play();
+            poster.src = posters[index];
+            alert(index  + " is playing")
+            --index;
+        };
+ 
+     function time(){
+       song.max  =  audio.currentTime;
+        
+     }
+      
+
+    </script>
+</body>
+
+</html>
